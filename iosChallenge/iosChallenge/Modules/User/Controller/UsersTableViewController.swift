@@ -24,6 +24,7 @@ class UsersTableViewController: UITableViewController {
                 let action = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
                 alert.addAction(action)
                 self.present(alert, animated: true, completion: nil)
+                return
             }
             self.users.append(contentsOf: users)
             self.tableView.reloadData()
