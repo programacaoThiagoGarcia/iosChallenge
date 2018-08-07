@@ -8,6 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		3A387F2010650AC2AC5BABD1 /* Pods_iosChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BC6A8189B5644E86B626AAD /* Pods_iosChallenge.framework */; };
+		9A2E43EE2118F46000C2C315 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2E43ED2118F46000C2C315 /* Post.swift */; };
+		9A2E43F02118F66800C2C315 /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2E43EF2118F66800C2C315 /* PostView.swift */; };
+		9A2E43F22118F6C600C2C315 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2E43F12118F6C600C2C315 /* PostTableViewCell.swift */; };
+		9A2E43F42118F74200C2C315 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2E43F32118F74200C2C315 /* PostViewController.swift */; };
+		9A2E43F82118FDB800C2C315 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2E43F72118FDB800C2C315 /* Comment.swift */; };
+		9A2E43FA2118FDD800C2C315 /* CommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2E43F92118FDD800C2C315 /* CommentViewController.swift */; };
+		9A2E43FC2118FDE900C2C315 /* CommentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2E43FB2118FDE900C2C315 /* CommentView.swift */; };
+		9A2E43FE2118FE1700C2C315 /* CommentsHeaderTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2E43FD2118FE1700C2C315 /* CommentsHeaderTableView.swift */; };
+		9A2E44002118FF0700C2C315 /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2E43FF2118FF0700C2C315 /* CommentTableViewCell.swift */; };
+		9A2E440A21191AA600C2C315 /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2E440921191AA600C2C315 /* Todo.swift */; };
+		9A2E440C21191B5700C2C315 /* TodoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2E440B21191B5700C2C315 /* TodoViewController.swift */; };
+		9A2E440E21191B7400C2C315 /* TodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2E440D21191B7400C2C315 /* TodoView.swift */; };
+		9A2E441021191CD200C2C315 /* TodoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2E440F21191CD200C2C315 /* TodoTableViewCell.swift */; };
 		9A745D052116FD5500ACC92E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A745D042116FD5500ACC92E /* AppDelegate.swift */; };
 		9A745D0C2116FD5700ACC92E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A745D0B2116FD5700ACC92E /* Assets.xcassets */; };
 		9A745D0F2116FD5700ACC92E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A745D0D2116FD5700ACC92E /* LaunchScreen.storyboard */; };
@@ -33,6 +46,19 @@
 		31F82229A3792650F4AA5CC9 /* Pods-iosChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosChallenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iosChallenge/Pods-iosChallenge.debug.xcconfig"; sourceTree = "<group>"; };
 		35F039982036DF9DCE85E5EF /* Pods-iosChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosChallenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-iosChallenge/Pods-iosChallenge.release.xcconfig"; sourceTree = "<group>"; };
 		6BC6A8189B5644E86B626AAD /* Pods_iosChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iosChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A2E43ED2118F46000C2C315 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		9A2E43EF2118F66800C2C315 /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
+		9A2E43F12118F6C600C2C315 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		9A2E43F32118F74200C2C315 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		9A2E43F72118FDB800C2C315 /* Comment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		9A2E43F92118FDD800C2C315 /* CommentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentViewController.swift; sourceTree = "<group>"; };
+		9A2E43FB2118FDE900C2C315 /* CommentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentView.swift; sourceTree = "<group>"; };
+		9A2E43FD2118FE1700C2C315 /* CommentsHeaderTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsHeaderTableView.swift; sourceTree = "<group>"; };
+		9A2E43FF2118FF0700C2C315 /* CommentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
+		9A2E440921191AA600C2C315 /* Todo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
+		9A2E440B21191B5700C2C315 /* TodoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoViewController.swift; sourceTree = "<group>"; };
+		9A2E440D21191B7400C2C315 /* TodoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoView.swift; sourceTree = "<group>"; };
+		9A2E440F21191CD200C2C315 /* TodoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoTableViewCell.swift; sourceTree = "<group>"; };
 		9A745D012116FD5500ACC92E /* iosChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iosChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A745D042116FD5500ACC92E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9A745D0B2116FD5700ACC92E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -83,6 +109,75 @@
 				35F039982036DF9DCE85E5EF /* Pods-iosChallenge.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		9A2E43E92118ED2200C2C315 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9A2E43F32118F74200C2C315 /* PostViewController.swift */,
+				9A2E43F92118FDD800C2C315 /* CommentViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9A2E43EA2118ED3700C2C315 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9A2E43FD2118FE1700C2C315 /* CommentsHeaderTableView.swift */,
+				9A2E43FF2118FF0700C2C315 /* CommentTableViewCell.swift */,
+				9A2E43FB2118FDE900C2C315 /* CommentView.swift */,
+				9A2E43F12118F6C600C2C315 /* PostTableViewCell.swift */,
+				9A2E43EF2118F66800C2C315 /* PostView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9A2E43EB2118ED3D00C2C315 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		9A2E43EC2118ED4500C2C315 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9A2E43F72118FDB800C2C315 /* Comment.swift */,
+				9A2E43ED2118F46000C2C315 /* Post.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9A2E4403211917FD00C2C315 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9A2E440D21191B7400C2C315 /* TodoView.swift */,
+				9A2E440F21191CD200C2C315 /* TodoTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9A2E44042119180F00C2C315 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9A2E440B21191B5700C2C315 /* TodoViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9A2E44052119181800C2C315 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9A2E440921191AA600C2C315 /* Todo.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9A2E44062119182200C2C315 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 		9A745CF82116FD5500ACC92E = {
@@ -150,6 +245,10 @@
 		9A745D192116FE6C00ACC92E /* Post */ = {
 			isa = PBXGroup;
 			children = (
+				9A2E43EC2118ED4500C2C315 /* Model */,
+				9A2E43EB2118ED3D00C2C315 /* Presenter */,
+				9A2E43EA2118ED3700C2C315 /* View */,
+				9A2E43E92118ED2200C2C315 /* Controller */,
 			);
 			path = Post;
 			sourceTree = "<group>";
@@ -168,6 +267,10 @@
 		9A745D1B2116FE7F00ACC92E /* Todo */ = {
 			isa = PBXGroup;
 			children = (
+				9A2E44062119182200C2C315 /* Presenter */,
+				9A2E44052119181800C2C315 /* Model */,
+				9A2E44042119180F00C2C315 /* Controller */,
+				9A2E4403211917FD00C2C315 /* View */,
 			);
 			path = Todo;
 			sourceTree = "<group>";
@@ -386,11 +489,23 @@
 			files = (
 				9A745D4621178DDB00ACC92E /* AlbumViewController.swift in Sources */,
 				9A745D282117608B00ACC92E /* ConnectionManager.swift in Sources */,
+				9A2E440E21191B7400C2C315 /* TodoView.swift in Sources */,
+				9A2E44002118FF0700C2C315 /* CommentTableViewCell.swift in Sources */,
 				9A745D342117740900ACC92E /* UsersTableViewController.swift in Sources */,
 				9A745D502117B45A00ACC92E /* PhotosView.swift in Sources */,
+				9A2E43FC2118FDE900C2C315 /* CommentView.swift in Sources */,
+				9A2E43F42118F74200C2C315 /* PostViewController.swift in Sources */,
+				9A2E43EE2118F46000C2C315 /* Post.swift in Sources */,
+				9A2E43F22118F6C600C2C315 /* PostTableViewCell.swift in Sources */,
 				9A745D1E211704C400ACC92E /* EndPoints.swift in Sources */,
+				9A2E440C21191B5700C2C315 /* TodoViewController.swift in Sources */,
 				9A745D4421178D5B00ACC92E /* AlbumTableViewCell.swift in Sources */,
+				9A2E440A21191AA600C2C315 /* Todo.swift in Sources */,
+				9A2E43FE2118FE1700C2C315 /* CommentsHeaderTableView.swift in Sources */,
 				9A745D052116FD5500ACC92E /* AppDelegate.swift in Sources */,
+				9A2E43FA2118FDD800C2C315 /* CommentViewController.swift in Sources */,
+				9A2E441021191CD200C2C315 /* TodoTableViewCell.swift in Sources */,
+				9A2E43F82118FDB800C2C315 /* Comment.swift in Sources */,
 				9A745D4821178E0400ACC92E /* AlbumView.swift in Sources */,
 				9A745D312117734300ACC92E /* UserTableViewCell.swift in Sources */,
 				9A745D222117063F00ACC92E /* StringExtension.swift in Sources */,
@@ -399,6 +514,7 @@
 				9A745D4E2117B0F000ACC92E /* PhotoCollectionViewCell.swift in Sources */,
 				9A745D4C2117AFA300ACC92E /* PhotosViewController.swift in Sources */,
 				9A745D2B211763C600ACC92E /* User.swift in Sources */,
+				9A2E43F02118F66800C2C315 /* PostView.swift in Sources */,
 				9A745D3A21177D2300ACC92E /* Album.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

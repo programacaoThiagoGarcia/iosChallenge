@@ -59,9 +59,16 @@ class UsersTableViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "userToTabBar"{
             if let tabbarController = segue.destination as? UITabBarController{
-                let vc = tabbarController.viewControllers![0] as! AlbumViewController
+                let user = tabbarController.viewControllers![0] as! AlbumViewController
                 let row = sender as! Int
-                vc.idUser = "\(users[row].id)"
+                user.idUser = "\(users[row].id)"
+                
+                let post = tabbarController.viewControllers![1] as! PostViewController
+                post.userId = "\(users[row].id)"
+                
+                let todo = tabbarController.viewControllers![2] as! TodoViewController
+                todo.userId = "\(users[row].id)"
+                
             }
         }
     

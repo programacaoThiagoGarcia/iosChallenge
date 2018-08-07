@@ -8,16 +8,18 @@
 
 import Foundation
 
-private let BASEURL = "https://jsonplaceholder.typicode.com"
+private let BASEURL  = "https://jsonplaceholder.typicode.com"
 
-let endPointUsers = "\(BASEURL)/users"
+let endPointUsers    = "\(BASEURL)/users"
 
-let endPointAlbuns = "\(BASEURL)/albums?userId={id}"
+let endPointAlbuns   = "\(BASEURL)/albums?userId={id}"
 
-let endPointPhotos = "\(BASEURL)/photos?userId={id}"
+let endPointPhotos   = "\(BASEURL)/photos?userId={id}"
 
-let endPointPosts  = "\(BASEURL)/posts?userId={id}"
+let endPointPosts    = "\(BASEURL)/posts?userId={id}"
 
-let endPointTodos  = "\(BASEURL)/todos?userId={id}"
+let endPointTodos    = "\(BASEURL)/todos?userId={id}"
+
+let endPointComments = "\(BASEURL)/comments?postId={id}"
 
 
