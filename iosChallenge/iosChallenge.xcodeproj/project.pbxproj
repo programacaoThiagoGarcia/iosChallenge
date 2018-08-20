@@ -24,13 +24,13 @@
 		9A2E440C21191B5700C2C315 /* TodoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2E440B21191B5700C2C315 /* TodoViewController.swift */; };
 		9A2E440E21191B7400C2C315 /* TodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2E440D21191B7400C2C315 /* TodoView.swift */; };
 		9A2E441021191CD200C2C315 /* TodoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2E440F21191CD200C2C315 /* TodoTableViewCell.swift */; };
+		9A5A5FF4212B575700E74F28 /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5A5FF3212B575700E74F28 /* Connection.swift */; };
+		9A5A5FF6212B659D00E74F28 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5A5FF5212B659D00E74F28 /* NetworkManager.swift */; };
 		9A745D052116FD5500ACC92E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A745D042116FD5500ACC92E /* AppDelegate.swift */; };
 		9A745D0C2116FD5700ACC92E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A745D0B2116FD5700ACC92E /* Assets.xcassets */; };
 		9A745D0F2116FD5700ACC92E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A745D0D2116FD5700ACC92E /* LaunchScreen.storyboard */; };
 		9A745D1E211704C400ACC92E /* EndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A745D1D211704C400ACC92E /* EndPoints.swift */; };
 		9A745D222117063F00ACC92E /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A745D212117063F00ACC92E /* StringExtension.swift */; };
-		9A745D24211706E500ACC92E /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A745D23211706E500ACC92E /* Connection.swift */; };
-		9A745D282117608B00ACC92E /* ConnectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A745D272117608B00ACC92E /* ConnectionManager.swift */; };
 		9A745D2B211763C600ACC92E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A745D2A211763C600ACC92E /* User.swift */; };
 		9A745D2E2117717400ACC92E /* UserStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A745D2D2117717400ACC92E /* UserStoryboard.storyboard */; };
 		9A745D312117734300ACC92E /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A745D302117734300ACC92E /* UserTableViewCell.swift */; };
@@ -65,6 +65,8 @@
 		9A2E440B21191B5700C2C315 /* TodoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoViewController.swift; sourceTree = "<group>"; };
 		9A2E440D21191B7400C2C315 /* TodoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoView.swift; sourceTree = "<group>"; };
 		9A2E440F21191CD200C2C315 /* TodoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoTableViewCell.swift; sourceTree = "<group>"; };
+		9A5A5FF3212B575700E74F28 /* Connection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connection.swift; sourceTree = "<group>"; };
+		9A5A5FF5212B659D00E74F28 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		9A745D012116FD5500ACC92E /* iosChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iosChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A745D042116FD5500ACC92E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9A745D0B2116FD5700ACC92E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -72,8 +74,6 @@
 		9A745D102116FD5700ACC92E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A745D1D211704C400ACC92E /* EndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoints.swift; sourceTree = "<group>"; };
 		9A745D212117063F00ACC92E /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
-		9A745D23211706E500ACC92E /* Connection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connection.swift; sourceTree = "<group>"; };
-		9A745D272117608B00ACC92E /* ConnectionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionManager.swift; sourceTree = "<group>"; };
 		9A745D2A211763C600ACC92E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		9A745D2D2117717400ACC92E /* UserStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserStoryboard.storyboard; sourceTree = "<group>"; };
 		9A745D302117734300ACC92E /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
@@ -295,8 +295,8 @@
 			isa = PBXGroup;
 			children = (
 				9A745D1D211704C400ACC92E /* EndPoints.swift */,
-				9A745D23211706E500ACC92E /* Connection.swift */,
-				9A745D272117608B00ACC92E /* ConnectionManager.swift */,
+				9A5A5FF3212B575700E74F28 /* Connection.swift */,
+				9A5A5FF5212B659D00E74F28 /* NetworkManager.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -457,16 +457,10 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-iosChallenge/Pods-iosChallenge-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
-				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -500,7 +494,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A745D4621178DDB00ACC92E /* AlbumViewController.swift in Sources */,
-				9A745D282117608B00ACC92E /* ConnectionManager.swift in Sources */,
 				9A2E440E21191B7400C2C315 /* TodoView.swift in Sources */,
 				9A2E44002118FF0700C2C315 /* CommentTableViewCell.swift in Sources */,
 				9A745D342117740900ACC92E /* UsersTableViewController.swift in Sources */,
@@ -513,6 +506,8 @@
 				9A2E440C21191B5700C2C315 /* TodoViewController.swift in Sources */,
 				9A745D4421178D5B00ACC92E /* AlbumTableViewCell.swift in Sources */,
 				9A2E440A21191AA600C2C315 /* Todo.swift in Sources */,
+				9A5A5FF4212B575700E74F28 /* Connection.swift in Sources */,
+				9A5A5FF6212B659D00E74F28 /* NetworkManager.swift in Sources */,
 				9A2E43FE2118FE1700C2C315 /* CommentsHeaderTableView.swift in Sources */,
 				9A745D052116FD5500ACC92E /* AppDelegate.swift in Sources */,
 				9A2E43FA2118FDD800C2C315 /* CommentViewController.swift in Sources */,
@@ -522,7 +517,6 @@
 				9A745D312117734300ACC92E /* UserTableViewCell.swift in Sources */,
 				9A745D222117063F00ACC92E /* StringExtension.swift in Sources */,
 				9A745D3C21177F7100ACC92E /* Photo.swift in Sources */,
-				9A745D24211706E500ACC92E /* Connection.swift in Sources */,
 				9A745D4E2117B0F000ACC92E /* PhotoCollectionViewCell.swift in Sources */,
 				9A745D4C2117AFA300ACC92E /* PhotosViewController.swift in Sources */,
 				9A745D2B211763C600ACC92E /* User.swift in Sources */,

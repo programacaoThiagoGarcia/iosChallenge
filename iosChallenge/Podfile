@@ -3,8 +3,6 @@ platform :ios, '9.0'
 
 target 'iosChallenge' do
   use_frameworks!
-
-  pod 'AlamofireObjectMapper', '~> 5.0'
   pod 'SDWebImage', '~> 4.0'
 
 end

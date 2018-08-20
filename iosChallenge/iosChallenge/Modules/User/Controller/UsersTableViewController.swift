@@ -11,24 +11,18 @@ import UIKit
 class UsersTableViewController: UITableViewController {
     
     var users : [User] = []
-    
+    static let enviroment : ConnectionType = .prod
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let user  : User = User()!
         self.tableView.tableFooterView = UIView()
-        user.getUsers { (users) in
-            
-            if users.count == 0{
-                let alert = UIAlertController(title: "Ops", message: "Empty users found!!", preferredStyle: .alert)
-                let action = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
-                alert.addAction(action)
-                self.present(alert, animated: true, completion: nil)
-                return
-            }
-            self.users.append(contentsOf: users)
-            self.tableView.reloadData()
+        let networkManager = NetworkManager<[User]>()
+        
+        networkManager.getItens(.user) { (res) in
+            print(res)
         }
+        
+    
     }
 
 
@@ -77,3 +71,5 @@ class UsersTableViewController: UITableViewController {
   
 
 }
+
+

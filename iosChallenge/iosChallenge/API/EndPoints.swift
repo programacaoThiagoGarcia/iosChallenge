@@ -8,18 +8,75 @@
 
 import Foundation
 
-private let BASEURL  = "https://jsonplaceholder.typicode.com"
+struct NetworkManagerStatus {
+    static let enviroment : ConnectionType = .prod
+}
+enum ConnectionType{
+    case prod
+    case homolog
+}
 
-let endPointUsers    = "\(BASEURL)/users"
+public enum ItensApi {
+    case user
+    case albuns(id:Int)
+    case photos(id:Int)
+    case posts(id:Int)
+    case todos(id:Int)
+    case comments(id:Int)
+}
 
-let endPointAlbuns   = "\(BASEURL)/albums?userId={id}"
+protocol EndPointType {
+    var baseURL            : URL        {get}
+    var path               : String     {get}
+    var method             : HTTPMethod {get}
+}
 
-let endPointPhotos   = "\(BASEURL)/photos?userId={id}"
+extension ItensApi: EndPointType {
+    var method: HTTPMethod {
+        return .get
+    }
+    
+    
+    var environmentBaseURL: String {
+        switch NetworkManagerStatus.enviroment {
+        case .prod    : return "https://jsonplaceholder.typicode.com"
+        case .homolog : return ""
+        }
+    }
+    
 
-let endPointPosts    = "\(BASEURL)/posts?userId={id}"
+    var baseURL: URL {
+        guard let url = URL(string: environmentBaseURL) else { fatalError("baseURL could not be configured.")}
+        return url
+    }
+    
+    var path: String {
+        switch self {
+        case .user:
+            return "/users"
+        case .albuns(let id):
+            return "/albums?userId=\(id)"
+        case .photos(let id):
+            return "/photos?userId=\(id)"
+        case .posts(let id):
+            return "/posts?userId=\(id)"
+        case .todos(let id):
+            return "/todos?userId=\(id)"
+        case .comments(let id):
+            return "/comments?postId=\(id)"
+        }
+    }
+    
+}
 
-let endPointTodos    = "\(BASEURL)/todos?userId={id}"
+public enum HTTPMethod : String{
+    case get     = "GET"
+    case post    = "POST"
+    case put     = "PUT"
+    case patch   = "PATCH"
+    case delete  = "DELETE"
+}
 
-let endPointComments = "\(BASEURL)/comments?postId={id}"
+
 
 

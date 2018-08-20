@@ -28,22 +28,7 @@ class PostViewController: UIViewController {
     
     func prepareDataSource(){
         self.mainView.indicator.startAnimating()
-        let post = Post()
-        post.getPost(userId!) { (result) in
-            if result.count == 0{
-                let alert = UIAlertController(title: "Ops", message: "Empty users found!!", preferredStyle: .alert)
-                let action = UIAlertAction(title: "Ok", style: .cancel, handler: { (action) in
-                    self.navigationController?.popViewController(animated: true)
-                })
-                alert.addAction(action)
-                self.present(alert, animated: true, completion: nil)
-                return
-            }
-            
-            self.posts.append(contentsOf: result)
-            self.mainView.tableView.reloadData()
-            self.mainView.indicator.stopAnimating()
-        }
+       
     }
 
     // MARK: - Navigation
