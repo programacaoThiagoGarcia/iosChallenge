@@ -16,13 +16,15 @@ class UsersTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.tableFooterView = UIView()
-        let networkManager = NetworkManager<[User]>()
+        let networkManager = NetworkManager<Result<User>>()
         
         networkManager.getItens(.user) { (res) in
-            print(res)
+            self.users = (res?.result)!
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
         }
         
-    
     }
 
 

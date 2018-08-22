@@ -17,7 +17,7 @@ protocol NetworkManagerProtocol {
 struct NetworkManager<T : Decodable> {
     let router = Connection<ItensApi>()
     
-    func getItens(_ endPoint : ItensApi, _ completion:@escaping(Decodable?)-> ()){
+    func getItens(_ endPoint : ItensApi, _ completion:@escaping(T?)-> ()){
         router.request(endPoint) { (data, res, err) in
             if err != nil{
             }
@@ -29,7 +29,9 @@ struct NetworkManager<T : Decodable> {
                 let type : T.Type = T.self
                 let json = try JSONSerialization.jsonObject(with: data!, options: .mutableContainers)
                 print(json)
-                let apiResponse = try JSONDecoder().decode(type, from: resData)
+                let jsonString = Service.readJsonLocal(data!)
+                print(jsonString)
+                let apiResponse = try JSONDecoder().decode(type, from: jsonString.data(using: .utf8)!)
                 print(apiResponse)
                 completion(apiResponse)
             }catch{

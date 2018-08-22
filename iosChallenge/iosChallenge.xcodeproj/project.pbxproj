@@ -43,6 +43,7 @@
 		9A745D4C2117AFA300ACC92E /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A745D4B2117AFA300ACC92E /* PhotosViewController.swift */; };
 		9A745D4E2117B0F000ACC92E /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A745D4D2117B0F000ACC92E /* PhotoCollectionViewCell.swift */; };
 		9A745D502117B45A00ACC92E /* PhotosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A745D4F2117B45A00ACC92E /* PhotosView.swift */; };
+		9ADA5A3B212E0C87001B1BC0 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADA5A3A212E0C87001B1BC0 /* Service.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -86,6 +87,7 @@
 		9A745D4B2117AFA300ACC92E /* PhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
 		9A745D4D2117B0F000ACC92E /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 		9A745D4F2117B45A00ACC92E /* PhotosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosView.swift; sourceTree = "<group>"; };
+		9ADA5A3A212E0C87001B1BC0 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -304,6 +306,7 @@
 		9A745D1F2117060F00ACC92E /* Setting */ = {
 			isa = PBXGroup;
 			children = (
+				9ADA5A39212E0C69001B1BC0 /* Service */,
 				9A745D202117061C00ACC92E /* Extensions */,
 			);
 			path = Setting;
@@ -376,6 +379,14 @@
 				9A745D4B2117AFA300ACC92E /* PhotosViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		9ADA5A39212E0C69001B1BC0 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				9ADA5A3A212E0C87001B1BC0 /* Service.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -510,6 +521,7 @@
 				9A5A5FF6212B659D00E74F28 /* NetworkManager.swift in Sources */,
 				9A2E43FE2118FE1700C2C315 /* CommentsHeaderTableView.swift in Sources */,
 				9A745D052116FD5500ACC92E /* AppDelegate.swift in Sources */,
+				9ADA5A3B212E0C87001B1BC0 /* Service.swift in Sources */,
 				9A2E43FA2118FDD800C2C315 /* CommentViewController.swift in Sources */,
 				9A2E441021191CD200C2C315 /* TodoTableViewCell.swift in Sources */,
 				9A2E43F82118FDB800C2C315 /* Comment.swift in Sources */,
